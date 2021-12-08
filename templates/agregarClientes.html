@@ -26,13 +26,13 @@
                     <form action="/agregacion" method="POST">
                         {% if existente==True %}
                         <label for="documento">Documento</label>
-                        <input style="border: 2px solid #7877b8;color: #7877b8;" name="documento" type="text" placeholder="El documento ya existe *">
+                        <input style="border: 2px solid #7877b8;color: #7877b8;" name="documento" type="number" placeholder="El documento ya existe *">
                         {% elif vacio==True%}
                         <label for="documento">Documento</label>
-                        <input style="border: 2px solid #7877b8;color: #7877b8;" name="documento" type="text" placeholder="Este campo está vacio *">
+                        <input style="border: 2px solid #7877b8;color: #7877b8;" name="documento" type="number" placeholder="Este campo está vacio *">
                         {% else %}
                         <label for="documento">Documento</label>
-                        <input name="documento" type="text">
+                        <input name="documento" type="number">
                         {% endif %}
                         
                         {% if vacio1==True %}
